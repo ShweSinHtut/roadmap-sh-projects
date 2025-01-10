@@ -1,0 +1,63 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+.input-container input[type='text'] {
+  min-width: 500px;
+  flex: 0;
+}
+.input-container input[type='text']::placeholder {
+  font-size: 14px;
+}
+.input-container i {
+  rotate: 90deg;
+}
+
+.tasks-container {
+  max-width: 540px;
+}
+.tasks-container > div {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.5px solid rgb(203, 203, 203);
+  padding: 5px 0;
+}
+.tasks-container input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+}
+.tasks-container input[type=checkbox]:checked {
+  accent-color: rgb(62, 62, 62);
+}
+.tasks-container p {
+  padding: 0;
+  margin: 0;
+  padding: 5px 0px;
+}
+.fa-trash {
+  text-align: center;
+  cursor: pointer;
+}
+
+.tasks-container .completed {
+  text-decoration: line-through;
+}
