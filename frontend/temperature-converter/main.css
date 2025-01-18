@@ -1,0 +1,66 @@
+*,*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  border: 2px solid;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 35px 40px;
+  margin-top: 5%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1, p {
+  padding: 5px 0;
+}
+
+.container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 90px 1fr 1fr 95px;
+  column-gap: 8px;
+}
+
+input[type=number],
+select {
+  border: 1.5px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+button.convert-btn {
+  border: 1.5px solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #2d2d2d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color ease-in-out .3s;
+}
+
+.convert-btn:hover {
+  background-color: #4a4a4a;
+}
+
+.result {
+  margin-top: 25px;
+  text-align: center;
+}
+.result p {
+  margin: 0;
+  padding: 0;
+}
