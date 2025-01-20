@@ -1,0 +1,7 @@
+@import url(../_variable.css);
+@import url(../_global.css);
+@import url(../_utilities.css);
+
+@import url(../components/_image.css);
+@import url(../components/_text.css);
+@import url(../components/_box.css);
