@@ -1,0 +1,25 @@
+.box {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.himuro .review {
+  width: 280px;
+}
+
+.kyo-shoma {
+  width: 650px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.itsuomi .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  width: 700px;
+  padding: 25px 30px;
+}
