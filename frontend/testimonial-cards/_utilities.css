@@ -1,0 +1,50 @@
+.circled {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.rounded {
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.border-rounded {
+  border: 1.5px solid var(--dark);
+  border-radius: 25px;
+  padding: 20px 15px;
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-25 {
+  margin-top: 20px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.customer-grouped {
+  display: flex;
+  column-gap: 15px;
+}
+
+i {
+  cursor: pointer;
+}

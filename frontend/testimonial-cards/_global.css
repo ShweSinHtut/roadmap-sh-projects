@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  /* border: 2px solid; */
+  padding: 15px 30px;
+  width: 47%;
+  margin: auto;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.border-rounded.collection {
+  padding: 20px 80px;
+}
