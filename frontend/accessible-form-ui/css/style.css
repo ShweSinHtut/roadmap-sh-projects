@@ -1,0 +1,142 @@
+:root {
+  --primary-dark: #1e1e1e;
+  --secondary-dark: #464646;
+  --light: #fff;
+  --secondary-light: #f5f1ee;
+  --grey: #a9a9a9;
+  --deep-grey: #939393;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  border: 2px solid;
+  border-radius: 10px;
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 0;
+  margin-top: 5%;
+  box-shadow: 2px 3px 15px var(--grey);
+}
+
+.input-group {
+  margin-bottom: 13px;
+}
+
+.form-container form,
+.form-container .progress-track {
+  padding: 15px 25px;
+}
+
+.form-container form {
+  width: 300px;
+}
+
+.input-label {
+  display: block;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+input, .btn {
+  width: 100%;
+  border: 1.5px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input::placeholder {
+  color: rgb(189, 189, 189);
+}
+
+.email-taken {
+  color: red ;
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+.pwd-group {
+  position: relative;
+}
+
+.pwd-group i {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  background-color: var(--primary-dark);
+  color: var(--light);
+  box-shadow: 0 2px 10px var(--deep-grey);
+  padding: 10px;
+  margin-top: 13px;
+  cursor: pointer;
+  transition: all ease-in .3s;
+}
+.btn:hover {
+  background-color: var(--secondary-dark);
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.chart-container .chart {
+  width: 120px; 
+  height: 120px; 
+  border-right: 8px solid var(--grey); 
+  border-bottom: 8px solid var(--grey);
+  border-left: 8px solid var(--secondary-dark);
+  border-top: 8px solid var(--secondary-dark);
+  border-radius: 50%; 
+  text-align: center; 
+  margin: 20px 0;
+  rotate: -40deg;
+}
+.chart-container .percent {
+  color: var(--secondary-dark);
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 70px;
+}
+
+.status-tracker {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 25px;
+  min-height: 250px;
+  background-color: var(--secondary-light);
+  font-size: 15px;
+}
+
+.status-tracker p {
+  padding: 5px 0;
+}
+
+.status-tracker .completed {
+  color: var(--grey);
+  text-decoration: line-through;
+}
