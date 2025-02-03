@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Form UI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="form-container">
+      <form action="" method="post">
+        <div class="input-group">
+          <label class="input-label" for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="What should we call you?" autocomplete="off">
+        </div>
+        <div class="input-group">
+          <label class="input-label" for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="example@email.com" autocomplete="off">
+          <p class="email-taken">Email is already taken.</p>
+        </div>        
+        <div class="input-group">
+          <label class="input-label" for="pwd">Enter Password</label>
+          <div class="pwd-group">
+            <input type="password" name="pwd" id="pwd">
+            <i class="fa-solid fa-eye-slash invisible"></i>
+          </div>
+        </div>        
+        <div class="input-group">
+          <label class="input-label" for="pwd-confirm">Confirm Password</label>
+          <div class="pwd-group">
+            <input type="password" name="pwd-confirm" id="pwd-confirm">
+            <i class="fa-solid fa-eye-slash"></i>
+          </div>
+        </div>        
+        <button type="submit" class="btn">Update Profile</button>
+      </form>
+
+      <div class="progress-track">
+        <div class="chart-container">
+          <div class="chart">
+          </div>
+          <span class="percent">65%</span>
+          <p>Profile Completeness</p>
+        </div>
+        <div class="status-tracker">
+          <p class="completed">Create Account</p>
+          <p class="completed">Update Roadmap Progress</p>
+          <p class="completed">Setup Public Profile</p>
+          <p class="">Complete your first project</p>
+          <p class="">Invite your Friends</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/ae71d28185.js" crossorigin="anonymous"></script>
+    <script src="js/script.js
+    "></script>
+  </main>
+</body>
+</html>
