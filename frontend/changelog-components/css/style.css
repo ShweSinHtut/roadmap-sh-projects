@@ -1,0 +1,70 @@
+:root {
+  --dark: rgb(31, 31, 31);
+  --bright-purple: #d400ff;
+  --light-purple: #dc2dff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background: var(--dark);
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  height: 100vh;
+  overflow: hidden !important;
+}
+.container {
+  margin: 20% auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container svg {
+  rotate: 90deg;
+}
+.container svg:hover {
+}
+
+.events {
+  /* border: 5px solid orange; */
+  width: 400px;
+  padding: 20px;
+  position: absolute;
+  left: 578.5px;
+}
+
+.events .event-wrapper {
+  display: grid;
+  grid-template-columns: 100px 30px 140px;
+  gap: 15px;
+  align-items: center;
+}
+
+.event-wrapper p, 
+.event-wrapper > div {
+  padding: 10px;
+}
+
+.event-wrapper p {
+  font-size: 14px;
+}
+
+.event-wrapper .date {
+  text-align: right;
+}
+
+.event-wrapper .circle {
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--bright-purple);
+  filter: drop-shadow(1px 2px 10px var(--light-purple));
+}
