@@ -1,0 +1,96 @@
+:root {
+  --dark: #222222;
+  --light: #a5a5a5;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+  max-width: 500px;
+  height: 300px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 1px 2px 5px rgb( 0 0 0 / .2);
+}
+
+.container > div  {
+  position: relative;
+}
+.container .nav-link {
+  text-decoration: none;
+  color: var(--dark);
+  transition: all ease-in-out .3s;
+}
+
+.container .dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--light);
+  border-radius: 10px;
+}
+
+.tooltip-container {
+  border-radius: 5px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 180px;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 14.5px;
+  background-color: var(--dark);
+  color: var(--white);
+  
+  display: none;
+  
+}
+.tooltip-container > div {
+  position: relative;
+}
+.tooltip-container .triangle {
+  display: inline-block;
+  border: 8px solid transparent;
+  border-top: 12px solid var(--dark);
+  position: absolute;
+  bottom: -25px;
+  left: calc(160px / 2);
+}
+
+.tooltip-container.home-tooltip {
+  left: -70px;
+  top: -50px;
+  transition: all ease-in-out 1s;
+}
+.tooltip-container.projects-tooltip {
+  left: -60px;
+  top: -50px;
+  transition: all ease-in-out 1s;
+}
+.tooltip-container.blog-tooltip {
+  left: -73px;
+  top: -50px;
+  transition: all ease-in-out 1s;
+}
+
+.home:hover .home-tooltip,
+.projects:hover .projects-tooltip,
+.blog:hover .blog-tooltip {
+  display: block;
+}
+
