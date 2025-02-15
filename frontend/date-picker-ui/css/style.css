@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper input {
+  border: 1.5px solid;
+  padding: 7px;
+  width: 200px;
+}
+.input-wrapper input:focus {
+  outline: none;
+}
+.input-wrapper button {
+  border: 1.5px solid;
+  border-left: 1px solid;
+  padding: 3px 7px;
+  position: relative;
+  left: -1px;
+  cursor: pointer;
+}
+
+.calendar-frame {
+  margin-top: 5px;
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calendar-frame .calendar-header {
+  border: 1.5px solid;
+  border-bottom: none;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.calendar-header p {
+  font-size: 14px;
+}
+.calendar-header svg {
+  width: 10px;
+  cursor: pointer;
+}
+
+.calendar-body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  border: 1px solid;
+}
+.calendar-body > div {
+  border: .5px solid;
+  padding: 5px;
+}
+.calendar-body > div:not(:first-child, :nth-child(2),:nth-child(3),
+:nth-child(4),
+:nth-child(5),
+:nth-child(6),
+:nth-child(7),
+:nth-child(8),
+:nth-child(9),
+:nth-child(10),
+:nth-child(11),
+:nth-child(12),
+:nth-child(13),
+:last-child
+):hover {
+  background-color: lightgrey;
+  user-select: none;
+}
